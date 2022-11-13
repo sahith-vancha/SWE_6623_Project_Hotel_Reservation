@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <div >
+        <h2 class="text-center" style="background-color: salmon; padding-right: 10%; color: white;" >Book your hotel </h2>
+    </div>
+<body>
+
+<div class="container">
+	<div class="modal-dialog">
+      <div class="modal-content col-md-8 col-md-offset-2">
+          
+          <div class="modal-body">
+              <div class="row">
+                  <div>
+                      <div class="well">
+                          <form class="form" >
+
+                            <div class="form-group">
+                                <label>Customer ID</label>
+                                <input type="number" class="form-control" [(ngModel)]="$any(booking).customerId" name="customerId" required="required"/>
+                            </div>
+				          	<p>
+			              		<label>check In</label>
+				              	<input type="date" class="form-control" [(ngModel)]="$any(booking).checkIn" name="checkIn" required="required"/>
+				          	</p>
+				          	<p>
+			              		<label>check Out</label>
+			              		<input type="date" class="form-control" [(ngModel)]="$any(booking).checkOut" name="checkOut" required="required"/>
+				          	</p>
+                              <p>
+                                <label for="guests">Guest Count ({{ guests.value }})</label>
+                                <input type="range" #guests (input)="guests.value" id="guests" min="0" max="4" class="form-control" [(ngModel)]="$any(booking).guests" name="guests" required="required"/>
+        
+                            </p>
+                            <p>
+                                <label>Hotel Name</label>
+                                <input type="text" class="form-control" [(ngModel)]="$any(booking).hotel" name="hotel" required="required"/>
+                            </p>
+                            <div >
+                                <label>Room Type</label>
+                                <select [(ngModel)]="$any(booking).roomType" name="roomType">
+                                  <option>Deluxe</option>
+                                  <option >Twin Deluxe</option>
+                                  <option >Regualar</option>
+                                  <option >Suite</option>
+                                  
+                                </select>
+                              </div>
+                            <p>
+                                <label>Price</label>
+                                <input type="number" class="form-control" [(ngModel)]="$any(booking).price" name="price" required="required"/>
+                            </p>
+				          	<p>
+			              		<input type="submit" style="background-color: salmon;" value="Book Now" class="btn btn-success btn-block" (click)="bookNow()" />
+				          	</p>
+                            {{message}}
+		      			  </form>
+                          
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+	</div>
+</div>
+<div th:replace="footer :: footer"></div>
+
+</body>
+</html>

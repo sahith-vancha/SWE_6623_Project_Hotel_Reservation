@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div >
+    <h2 class="text-center" style="background-color: salmon; padding-right: 10%; color: white;" >Welcome to hotel reservation</h2>
+</div>
+<h6 class="text-center" style="padding-right: 8% ; color: darkgreen; ">{{message}} continue to <a routerLink="../">login</a></h6>
+
+<div class="container">
+	<div class="modal-dialog">
+      <div class="modal-content col-md-8 col-md-offset-2">
+          
+          <div class="modal-body">
+              <div class="row">
+                  <div>
+                      <div class="well">
+                          <form class="form" >
+                            <h6>New User? Register here </h6>
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" class="form-control" [(ngModel)]="$any(customer).name" name="name" required="required"/>
+                            </div>
+				          	<p>
+			              		<label>Username</label>
+				              	<input type="text" class="form-control" [(ngModel)]="$any(customer).username" name="username" required="required"/>
+				          	</p>
+				          	<p>
+			              		<label>Password</label>
+			              		<input type="password" class="form-control" [(ngModel)]="$any(customer).password" name="password" required="required"/>
+				          	</p>
+                              <p>
+                                <label>age</label>
+                                <input type="number" class="form-control" [(ngModel)]="$any(customer).age" name="age" required="required"/>
+                            </p>
+                            <p>
+                                <label>phone</label>
+                                <input type="number" class="form-control" [(ngModel)]="$any(customer).phone" name="phone" required="required"/>
+                            </p>
+				          	<p>
+			              		<input type="submit" value="Register" style="background-color: salmon;" class="btn btn-success btn-block" (click)="registerNow()" />
+				          	</p>
+		      			  </form>
+                          
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+	</div>
+</div>
+<div th:replace="footer :: footer"></div>
+
+</body>
+</html>
