@@ -14,8 +14,11 @@ import { BookingComponent } from './booking/booking.component';
 import { ViewBookingComponent } from './view-booking/view-booking.component';
 
 
-@NgModule({
-  declarations: [
+@NgModule
+(
+  {
+  declarations: 
+  [
     AppComponent,
     LoginComponent,
     HomeComponent,
@@ -24,7 +27,8 @@ import { ViewBookingComponent } from './view-booking/view-booking.component';
     BookingComponent,
     ViewBookingComponent,
   ],
-  imports: [
+  imports: 
+  [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
@@ -33,5 +37,6 @@ import { ViewBookingComponent } from './view-booking/view-booking.component';
   ],
   providers: [CustomerRegistrationService],
   bootstrap: [AppComponent]
-})
+}
+)
 export class AppModule { }

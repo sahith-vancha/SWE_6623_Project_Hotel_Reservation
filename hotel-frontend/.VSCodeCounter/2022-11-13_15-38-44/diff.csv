@@ -1,0 +1,11 @@
+"filename", "language", "TypeScript", "CSS", "HTML", "comment", "blank", "total"
+"d:\hotel-frontend\src\app\app.component.spec.ts", "TypeScript", -6, 0, 0, 0, 1, -5
+"d:\hotel-frontend\src\app\booking.service.spec.ts", "TypeScript", 3, 0, 0, 0, -1, 2
+"d:\hotel-frontend\src\app\booking\booking.component.spec.ts", "TypeScript", 6, 0, 0, 0, -2, 4
+"d:\hotel-frontend\src\app\customer-registration.service.spec.ts", "TypeScript", 3, 0, 0, 0, -1, 2
+"d:\hotel-frontend\src\app\home\home.component.spec.ts", "TypeScript", 1, 0, 0, 0, 0, 1
+"d:\hotel-frontend\src\app\payment\payment.component.html", "HTML", 0, 0, -1, 0, 0, -1
+"d:\hotel-frontend\src\app\register\register.component.spec.ts", "TypeScript", 6, 0, 0, 0, -1, 5
+"d:\hotel-frontend\src\app\view-booking\view-booking.component.css", "CSS", 0, 0, 0, -3, 0, -3
+"d:\hotel-frontend\src\app\view-booking\view-booking.component.spec.ts", "TypeScript", 5, 0, 0, 0, -1, 4
+"Total", "-", 18, 0, -1, -3, -5, 9

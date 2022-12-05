@@ -1,0 +1,9 @@
+package com.ksu.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.ksu.model.Customer;
+
+public class CustomerRepository extends JpaRepository<Customer,Integer>{
+
+}

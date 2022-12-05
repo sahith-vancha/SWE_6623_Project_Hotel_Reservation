@@ -1,0 +1,24 @@
+package com.ksu.hotel.model;
+
+import java.sql.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+
+@Table(name="booking")
+public class Booking {
+    @Id
+    @GeneratedValue
+    private int bookingId;
+    private int customerId;
+    private Date checkIn;
+    private Date checkOut;
+    private int guests;
+    private String hotel;
+    private long phone;
+
+}

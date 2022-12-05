@@ -1,0 +1,18 @@
+package com.ksu.hotel;
+
+import org.junit.jupiter.api.Test;
+
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class HotelReservationAppicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+	   @Test
+	   public void getBookingTest() throws Exception {
+	   
+	   }
+
+}

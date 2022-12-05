@@ -1,0 +1,39 @@
+nav {
+    background-color: salmon;
+    display: grid;
+    place-items: center;
+    width: 100%;
+  
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color:white;
+    transition: 0.2s ease-in;
+    font-size: 18px;
+  }
+  
+  nav ul a:hover {
+    background-color: rgb(238, 76, 76);
+    color: white;
+  }
+  
+h1{
+    background-color: salmon; 
+    color:azure
+}
+h2{
+    color: salmon;
+}
+h3{
+    color:white;
+}
+p{
+    color:white;
+}

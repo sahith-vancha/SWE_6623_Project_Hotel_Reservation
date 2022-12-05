@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html>
     <div >
-        <h2 class="text-center" style="background-color: salmon; padding-right: 10%; color: white;" >Book your hotel </h2>
+        <h2 class="text-center">Book your hotel </h2>
+        <div class="navbar" id="navbar">
+            <nav>
+                <ul>
+                    <a href="../home"><li> Home </li></a>
+                    <a href="../booking"><li> Booking </li></a>
+                    <a href="../viewbooking"><li> View Bookings </li></a>
+                    <a href="../"><li> Login </li></a>
+                </ul>
+            </nav>
+          </div>
     </div>
 <body>
+   
 
 <div class="container">
 	<div class="modal-dialog">
@@ -17,24 +28,38 @@
 
                             <div class="form-group">
                                 <label>Customer ID</label>
-                                <input type="number" class="form-control" [(ngModel)]="$any(booking).customerId" name="customerId" required="required"/>
+                                <input type="number" class="form-control" 
+                                [(ngModel)]="$any(booking).customerId" name="customerId" 
+                                required="required"/>
                             </div>
 				          	<p>
 			              		<label>check In</label>
-				              	<input type="date" class="form-control" [(ngModel)]="$any(booking).checkIn" name="checkIn" required="required"/>
+				              	<input type="date" class="form-control"
+                                 [(ngModel)]="$any(booking).checkIn" name="checkIn" 
+                                 required="required"/>
 				          	</p>
 				          	<p>
 			              		<label>check Out</label>
-			              		<input type="date" class="form-control" [(ngModel)]="$any(booking).checkOut" name="checkOut" required="required"/>
+			              		<input type="date" class="form-control" 
+                                [(ngModel)]="$any(booking).checkOut" name="checkOut" 
+                                required="required"/>
 				          	</p>
                               <p>
-                                <label for="guests">Guest Count ({{ guests.value }})</label>
-                                <input type="range" #guests (input)="guests.value" id="guests" min="0" max="4" class="form-control" [(ngModel)]="$any(booking).guests" name="guests" required="required"/>
+                                <label for="guests">
+                                    Guest Count ({{ guests.value }})
+
+                                </label>
+                                <input type="range" #guests (input)="guests.value" 
+                                id="guests" min="0" max="4" 
+                                class="form-control" [(ngModel)]="$any(booking).guests" 
+                                name="guests" required="required"/>
         
                             </p>
                             <p>
                                 <label>Hotel Name</label>
-                                <input type="text" class="form-control" [(ngModel)]="$any(booking).hotel" name="hotel" required="required"/>
+                                <input type="text" class="form-control" 
+                                [(ngModel)]="$any(booking).hotel" name="hotel" 
+                                required="required"/>
                             </p>
                             <div >
                                 <label>Room Type</label>
@@ -48,12 +73,18 @@
                               </div>
                             <p>
                                 <label>Price</label>
-                                <input type="number" class="form-control" [(ngModel)]="$any(booking).price" name="price" required="required"/>
+                                <input type="number" class="form-control" 
+                                [(ngModel)]="$any(booking).price"
+                                 name="price" required="required"/>
                             </p>
 				          	<p>
-			              		<input type="submit" style="background-color: salmon;" value="Book Now" class="btn btn-success btn-block" (click)="bookNow()" />
+			              		<input type="submit" 
+                                style="background-color: salmon;"
+                                value="Book Now" 
+                                class="btn btn-success btn-block" 
+                                (click)="bookNow()" />
 				          	</p>
-                            {{message}}
+                            {{message}} continue to <a routerLink="../payment">Payment</a>
 		      			  </form>
                           
                       </div>

@@ -7,7 +7,9 @@ import { Customer } from './customer';
 })
 export class CustomerRegistrationService {
   public doRegistration(customer: Customer) {
-    return this.http.post("http://localhost:8080/register",customer,{responseType:'text' as 'json'});
+    return this.http.post
+    ("http://localhost:8080/register",
+    customer,{responseType:'text' as 'json'});
   }
  
 

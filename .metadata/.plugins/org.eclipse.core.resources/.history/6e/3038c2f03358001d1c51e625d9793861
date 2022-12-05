@@ -1,0 +1,28 @@
+package com.ksu.hotel;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.*;
+
+import com.ksu.hotel.dao.CustomerRepository;
+import com.ksu.hotel.model.Customer;
+
+@SpringBootApplication
+@RestController
+@CrossOrigin(origins = "*")
+public class HotelReservationAppication {
+	   @Autowired
+	    private CustomerRepository repository;
+
+	    @PostMapping("/register")
+	    public String register(@RequestBody Customer customer) {
+	    	repository.save(customer);
+	    	return "Hi "+customer.getName()+". You have registered";
+	        
+	    }
+	public static void main(String[] args) {
+		SpringApplication.run(HotelReservationAppication.class, args);
+	}
+
+}

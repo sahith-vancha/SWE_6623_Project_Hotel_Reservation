@@ -1,0 +1,15 @@
+"filename", "language", "TypeScript", "comment", "blank", "total"
+"d:\hotel-frontend\src\app\app-routing.module.ts", "TypeScript", 5, 0, 1, 6
+"d:\hotel-frontend\src\app\app.component.spec.ts", "TypeScript", 5, 0, 0, 5
+"d:\hotel-frontend\src\app\app.component.ts", "TypeScript", 2, 0, 0, 2
+"d:\hotel-frontend\src\app\app.module.ts", "TypeScript", 5, 0, 0, 5
+"d:\hotel-frontend\src\app\booking.service.ts", "TypeScript", 6, 0, 0, 6
+"d:\hotel-frontend\src\app\booking\booking.component.spec.ts", "TypeScript", 4, 0, 1, 5
+"d:\hotel-frontend\src\app\customer-registration.service.spec.ts", "TypeScript", 8, 0, 0, 8
+"d:\hotel-frontend\src\app\customer-registration.service.ts", "TypeScript", 2, 0, 0, 2
+"d:\hotel-frontend\src\app\home\home.component.spec.ts", "TypeScript", 3, 0, 0, 3
+"d:\hotel-frontend\src\app\login\login.component.spec.ts", "TypeScript", 3, 0, 0, 3
+"d:\hotel-frontend\src\app\payment\payment.component.spec.ts", "TypeScript", 3, 0, 0, 3
+"d:\hotel-frontend\src\app\register\register.component.spec.ts", "TypeScript", 4, 0, 0, 4
+"d:\hotel-frontend\src\app\view-booking\view-booking.component.spec.ts", "TypeScript", 5, 0, 0, 5
+"Total", "-", 55, 0, 2, 57

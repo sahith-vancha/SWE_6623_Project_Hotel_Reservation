@@ -1,0 +1,14 @@
+package com.ksu.hotel;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@RestController
+@SpringBootApplication
+public class HotelReservationAppication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(HotelReservationAppication.class, args);
+	}
+
+}

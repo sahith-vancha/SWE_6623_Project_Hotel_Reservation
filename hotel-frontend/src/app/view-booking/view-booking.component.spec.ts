@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { HttpClientModule } from '@angular/common/http';
 import { ViewBookingComponent } from './view-booking.component';
+import { FormsModule } from '@angular/forms';
 
 describe('ViewBookingComponent', () => {
   let component: ViewBookingComponent;
@@ -8,7 +9,15 @@ describe('ViewBookingComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ViewBookingComponent ]
+      declarations: 
+      [
+         ViewBookingComponent
+         ],
+      imports:
+      [
+        HttpClientModule,
+      FormsModule
+    ]
     })
     .compileComponents();
 

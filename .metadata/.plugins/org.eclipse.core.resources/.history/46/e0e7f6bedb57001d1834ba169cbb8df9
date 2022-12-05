@@ -1,0 +1,5 @@
+package com.ksu.dao;
+
+public class CustomerRepository {
+
+}

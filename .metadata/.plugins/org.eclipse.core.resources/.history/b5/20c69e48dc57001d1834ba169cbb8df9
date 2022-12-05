@@ -1,0 +1,5 @@
+package com.ksu.model;
+
+public class Customer {
+
+}

@@ -11,13 +11,13 @@ export class ViewBookingComponent implements OnInit {
 
   booking:any;
   customerId:any;
-  
+  message:any
   constructor(private service:BookingService) { }
 
 
 public deleteBooking(id:number){
  let resp= this.service.deleteBooking(id);
- resp.subscribe((data)=>this.booking=data);
+ resp.subscribe((data)=>this.message=data);
 }
 
 public findBookingByCustomerId(){

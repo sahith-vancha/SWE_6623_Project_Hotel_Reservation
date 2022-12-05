@@ -1,0 +1,51 @@
+package com.ksu.hotel;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.*;
+
+import com.ksu.hotel.dao.BookingRepository;
+import com.ksu.hotel.dao.CustomerRepository;
+import com.ksu.hotel.model.Booking;
+import com.ksu.hotel.model.Customer;
+
+@SpringBootApplication
+@RestController
+@CrossOrigin(origins = "*")
+public class HotelReservationAppication {
+	   @Autowired
+	    private CustomerRepository customerrepository;
+	   
+	   @Autowired
+	   private BookingRepository bookingrepository;
+	   
+
+	    @PostMapping("/register")
+	    public String register(@RequestBody Customer customer) {
+	    	customerrepository.save(customer);
+	    	return "Hi "+customer.getName()+". You have registered";
+	        
+	    }
+	    @PostMapping("/booking")
+	    public String register(@RequestBody Booking booking) {
+	    	bookingrepository.save(booking);
+	    	return "You have succesfully reserved your booking";
+	        
+	    }
+	    @GetMapping("/findbooking/{bookingId}")
+	    public List<Booking> findBooking(@PathVariable int bookingId) {
+	        return bookingrepository.findByBookingId(bookingId);
+	    }
+	    @DeleteMapping("/cancel/{id}")
+	    public List<Booking> cancelRegistration(@PathVariable int id) {
+	        bookingrepository.deleteById(id);
+	        return bookingrepository.findAll();
+	    }
+	public static void main(String[] args) {
+		SpringApplication.run(HotelReservationAppication.class, args);
+	}
+
+}

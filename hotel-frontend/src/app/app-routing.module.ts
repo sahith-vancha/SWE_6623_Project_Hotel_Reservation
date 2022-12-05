@@ -9,16 +9,22 @@ import { PaymentComponent } from './payment/payment.component';
 import { RegisterComponent } from './register/register.component';
 import { ViewBookingComponent } from './view-booking/view-booking.component';
 
-const routes: Routes = [
-  { path: '', component: LoginComponent },
+const routes: Routes =
+[
+{ path: '', component: LoginComponent },
 { path: 'home', component: HomeComponent },
 {path: 'register', component: RegisterComponent },
 {path: 'booking', component: BookingComponent},
 {path: 'viewbooking', component: ViewBookingComponent},
-{path: 'payment', component:PaymentComponent }];
+{path: 'payment', component:PaymentComponent }
 
-@NgModule({
+];
+
+@NgModule
+(
+  {
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
-})
+}
+)
 export class AppRoutingModule { }
